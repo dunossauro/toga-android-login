@@ -6,16 +6,20 @@ This project is a simple experiment creating a login page using beeware for andr
 
 This project uses Poetry, so
 
+```
 poetry shell
 poetry install
+```
 
 To run this project in android emulator
 
+```
 briefcase run android
-
+```
 To test and coverage
 
+```
 pytest --cov=livedepython
-
+```
 ![sample](./beeware.gif)
 
