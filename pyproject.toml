@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "toga_android_login"
+version = "0.1.0"
+description = ""
+authors = ["dunossauro <mendesxeduardo@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+briefcase = "^0.3.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.1.1"
+toga = "0.3.0.dev25"
+pytest-cov = "^2.10.1"
+black = "^20.8b1"
+
+[tool.briefcase]
+project_name = "Live de Python"
+bundle = "com.example"
+version = "0.0.1"
+url = "http://dunossauro.live"
+license = "GNU General Public License v3 or later (GPLv3+)"
+author = 'Eduardo Mendes'
+author_email = "mendesxeduardo@gmail.com"
+
+[tool.briefcase.app.livedepython]
+formal_name = "Live de Python"
+description = "Simple login example"
+icon = "livedepython/resources/livedepython"
+sources = ['livedepython']
+requires = []
+
+[tool.briefcase.app.livedepython.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.black]
+line-length = 79
+skip-string-normalization = true
